@@ -25,25 +25,25 @@ The **MVP** will cover:
 
 1. Initial Page
 
-![Initial Page](C:\Users\Usuario\Desktop\project1\page_1.png)
+![Initial Page](https://github.com/krankie-code/hero-battle-simulator/blob/master/img/page_1.png?raw=true)
 
 2. Battle combat simulator
 
-   ![Battle combat simulator](C:\Users\Usuario\Desktop\project1\page_4.png)
+![Battle combat simulator](https://github.com/krankie-code/hero-battle-simulator/blob/master/img/page_4.png?raw=true)
 
-   3. Log in
+3. Log in
 
-      The initial idea of the login is that gets displayed over the initial web page instead of directing you in to a new URL
+The initial idea of the login is that gets displayed over the initial web page instead of directing you in to a new URL
 
-      ![Log in](C:\Users\Usuario\Desktop\project1\page_3.png)
+![Log in](https://github.com/krankie-code/hero-battle-simulator/blob/master/img/page_2.png?raw=true)
 
-      
 
-      4. Sign in
 
-         ![](C:\Users\Usuario\Desktop\project1\page_2.png)
+4. Sign in
 
-         
+   ![](https://github.com/krankie-code/hero-battle-simulator/blob/master/img/page_3.png?raw=true)
+
+   
 
 ## Data Structure
 
