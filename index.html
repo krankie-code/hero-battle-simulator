@@ -19,7 +19,7 @@
         <nav>
             <ul class = "nav_links">
                 <li><a href="#about">About</a></li>
-                <li><a href="log_in.html">Log in</a></li>
+                <li><button type='submit' id = "button">Log in</button></li>
                 <li><a href="sign_in.html">Sign in</a></li>                    
 
             </ul>
@@ -54,6 +54,38 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
         </div>
     </section>
+    <div class = "pop">
+        <div class="model-content">
+            <div class="close">+</div>
+            <img src="" alt="">
+            <section class = "d-flex justify-content-center ">
+                
+                <form class = "form-container">
+                     <h2>SIGN IN</h2>
+                     <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your superhero power">
+                      </div>
+                     <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat password">
+                      </div>
+                      <div class = "text-center ">
+                      <button type="submit" class="btn btn-primary ">Submit</button>
+                      </div>
+                    </form>
+            </section>
+
+        </div>
+
+    </div>
     <footer></footer>
     <script>
         var arr = [];
@@ -62,16 +94,23 @@
     var string = `url:(https://superheroapi.com/api/599075271045222/${selectN})`
 
 
-    
+
     return arr.push(string)
     }
 
     for(var i = 0; i < 5; i++){
         random()
-    }
+    }   
     console.log(arr);
 
+    document.getElementById('button').addEventListener('click', function (){
+        document.querySelector('.pop').style.display = "flex"
+    })
     
+    document.querySelector('.close').addEventListener('click', function (){
+        document.querySelector('.pop').style.display = "none"
+    })
+
     </script>
 </body>
 </html>

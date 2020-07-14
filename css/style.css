@@ -58,6 +58,7 @@ h1, h2{
     width:50%;
     position: absolute;
     top:15%;
+    background-color: white;
 }
 .form-container > h2{
     margin-bottom: 50px;
@@ -74,4 +75,28 @@ h1, h2{
 .col2{
     background-image: url("https://www.superherodb.com/pictures2/portraits/10/100/22.jpg");
     background-position: center;
+}
+.pop{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+
+.model-content{
+      position:relative;
+      width:80%;
+}
+.close{
+    position:absolute;
+    top:0;
+    right:14px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor:pointer;
 }
