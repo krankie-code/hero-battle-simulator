@@ -27,6 +27,7 @@
     </header> 
     <h1>Hero Battle Simulator</h1>
     <div class="container">
+        <a href ="game.html" class = 'battle'>Let's battle!</a>
   <div class="row">
     <div class="col col1">Column 1</div>
     <div class="col col2">Column 2</div>
@@ -56,12 +57,17 @@
     </section>
     <div class = "pop">
         <div class="model-content">
-            <div class="close">+</div>
-            <img src="" alt="">
+            <div class = "modal-header">
+                <h2>SIGN IN</h2>
+                <img src="img\user.png" alt="">
+             <div class="close">&times;</div>
+            </div>
+
+            
+
             <section class = "d-flex justify-content-center ">
                 
-                <form class = "form-container">
-                     <h2>SIGN IN</h2>
+                <form>
                      <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
                       </div>
@@ -82,26 +88,12 @@
                       </div>
                     </form>
             </section>
-
+            <div id="overlay"></div>
         </div>
 
     </div>
     <footer></footer>
     <script>
-        var arr = [];
-        function random (){
-    var selectN = Math.floor(Math.random()*731)
-    var string = `url:(https://superheroapi.com/api/599075271045222/${selectN})`
-
-
-
-    return arr.push(string)
-    }
-
-    for(var i = 0; i < 5; i++){
-        random()
-    }   
-    console.log(arr);
 
     document.getElementById('button').addEventListener('click', function (){
         document.querySelector('.pop').style.display = "flex"
@@ -112,5 +104,10 @@
     })
 
     </script>
+    <script src = "src/Database.js"></script>
+    <script src = "src/Signup.js"></script>
+    <script src = "src/User.js"></script>
+    <script src = "src/Validator.js"></script>
+
 </body>
 </html>
